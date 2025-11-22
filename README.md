@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# 🌐 **AI for Everyone — Kerala AI Campaign by TinkerHub**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive, and accessible web platform built for the **TinkerHub Kerala AI Campaign** to promote AI literacy among **students, youth, and the general public**.  
+This project is designed to help people **share their AI experiences**, discover **beginner-friendly AI tools**, and understand how AI can empower everyday life.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 **Project Goal**
 
-## React Compiler
+The aim of this initiative is to **democratize AI knowledge** in Kerala by providing a student-friendly, resource-rich platform that inspires learning, curiosity, and awareness across all age groups.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 **Features**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎤 **Share Your AI Story**  
+  A dedicated section for users to share their journeys, learnings, and experiences with AI.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 📚 **AI Learning Resources**  
+  Curated guides, tools, and beginner-friendly explanations to help anyone start learning AI.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🧠 **AI for Students**  
+  Simplified lessons, tools, and activities designed especially for students in Kerala.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🎨 **Minimal Dark-Themed UI**  
+  Clean, modern interface optimized for ease of use and accessibility.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🎬 **Smooth Animations**  
+  Interactive transitions using modern animation libraries for an engaging experience.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 📱 **Fully Responsive**  
+  Works seamlessly on phones, tablets, and desktops.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- ⚡ **Built with React + Vite**  
+  Fast development environment with Hot Module Reloading and optimized builds.
+
+---
+
+## 🛠️ **Tech Stack**
+
+### **Frontend**
+- React.js  
+- Vite  
+- TailwindCSS  
+- Framer Motion / GSAP (animations)
+
+### **Optional Tools**
+- Firebase / Appwrite (for storing user stories)  
+- Node.js (for future backend features)
+
+---
+
+## 📦 **Installation & Setup**
+
+### **1️⃣ Clone the repository**
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>/frontend
