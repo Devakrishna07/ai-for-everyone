@@ -1,58 +1,16 @@
-# 🌐 **AI for Everyone — Kerala AI Campaign by TinkerHub**
+# React + Vite
 
-A modern, interactive, and accessible web platform built for the **TinkerHub Kerala AI Campaign** to promote AI literacy among **students, youth, and the general public**.  
-This project is designed to help people **share their AI experiences**, discover **beginner-friendly AI tools**, and understand how AI can empower everyday life.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🎯 **Project Goal**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-The aim of this initiative is to **democratize AI knowledge** in Kerala by providing a student-friendly, resource-rich platform that inspires learning, curiosity, and awareness across all age groups.
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🚀 **Features**
+## Expanding the ESLint configuration
 
-- 🎤 **Share Your AI Story**  
-  A dedicated section for users to share their journeys, learnings, and experiences with AI.
-
-- 📚 **AI Learning Resources**  
-  Curated guides, tools, and beginner-friendly explanations to help anyone start learning AI.
-
-- 🧠 **AI for Students**  
-  Simplified lessons, tools, and activities designed especially for students in Kerala.
-
-- 🎨 **Minimal Dark-Themed UI**  
-  Clean, modern interface optimized for ease of use and accessibility.
-
-- 🎬 **Smooth Animations**  
-  Interactive transitions using modern animation libraries for an engaging experience.
-
-- 📱 **Fully Responsive**  
-  Works seamlessly on phones, tablets, and desktops.
-
-- ⚡ **Built with React + Vite**  
-  Fast development environment with Hot Module Reloading and optimized builds.
-
----
-
-## 🛠️ **Tech Stack**
-
-### **Frontend**
-- React.js  
-- Vite  
-- TailwindCSS  
-- Framer Motion / GSAP (animations)
-
-### **Optional Tools**
-- Firebase / Appwrite (for storing user stories)  
-- Node.js (for future backend features)
-
----
-
-## 📦 **Installation & Setup**
-
-### **1️⃣ Clone the repository**
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>/frontend
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
