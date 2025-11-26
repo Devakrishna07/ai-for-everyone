@@ -1,9 +1,13 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
 
 export default function App() {
   return (
-    <div className='w-screen min-h-screen flex items-center justify-center bg-black text-white '>
-      hello
-    </div>
+    <BrowserRouter>
+       <Routes>
+        <Route path='/' element={<Home />} />
+       </Routes>
+    </BrowserRouter>
   )
 }
