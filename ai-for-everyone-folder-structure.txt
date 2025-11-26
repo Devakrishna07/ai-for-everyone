@@ -1,0 +1,59 @@
+ai-for-everyone/
+│
+├── public/
+│   └── assets/
+│       └── images/
+│
+├── src/
+│   ├── components/
+│   │   ├── ui/                 # shadcn components
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── common/
+│   │   │   ├── HeroSection.jsx
+│   │   │   ├── SectionHeader.jsx
+│   │   │   ├── Card.jsx
+│   │   │   └── Button.jsx
+│   │   └── program/
+│   │       ├── KuttyMakersCard.jsx
+│   │       ├── YoungMakersCard.jsx
+│   │       └── FriendsMovementCard.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── WhyAILiteracy.jsx
+│   │   ├── Approach.jsx
+│   │   ├── KuttyMakers.jsx
+│   │   ├── YoungMakers.jsx
+│   │   ├── FriendsMovement.jsx
+│   │   ├── Partners.jsx
+│   │   ├── Contact.jsx
+│   │   └── Resources.jsx
+│   │
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useFetch.js
+│   │   └── useScroll.js
+│   │
+│   ├── context/
+│   │   └── AppContext.jsx
+│   │
+│   ├── lib/
+│   │   └── api.js
+│   │
+│   ├── styles/
+│   │   ├── globals.css
+│   │   └── tailwind.css
+│   │
+│   ├── data/
+│   │   └── programInfo.json
+│   │
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md

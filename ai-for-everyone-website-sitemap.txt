@@ -1,0 +1,62 @@
+/
+├── Home
+│
+├── Why AI Literacy
+│   ├── Literacy for All
+│   ├── Creators, Not Consumers
+│   ├── Knowledge as a Public Good
+│   └── Challenges (Students • Workforce • Community • Elders)
+│
+├── Our Approach
+│   ├── Head – Understand
+│   ├── Hand – Build
+│   └── Heart – Create & Mentor
+│
+├── Programs
+│   ├── KuttyMakers (Ages 10–17)
+│   │   ├── What They Learn
+│   │   ├── Activities & Tools (Scratch, Teachable Machine)
+│   │   ├── Outcomes
+│   │   └── Join as Student / Parent
+│   │
+│   ├── Young Makers (College Students & Early Professionals)
+│   │   ├── Skill Development
+│   │   ├── Study Jams & Hackathons
+│   │   ├── GenAI & LLM Projects
+│   │   ├── Kerala-specific AI Models
+│   │   └── Join as Student / Team
+│   │
+│   └── Friends of the Movement (Educators, Parents, Elders, Community Leaders)
+│       ├── AI Awareness & Safety
+│       ├── Deepfake & Misinformation Literacy
+│       ├── Learning Circles
+│       └── Join as Facilitator / Mentor
+│
+├── Partners
+│   ├── Knowledge Partners
+│   ├── Financial Partners
+│   ├── Media & Outreach Partners
+│   ├── Resource Partners
+│   └── Community Partners
+│
+├── Get Involved
+│   ├── Volunteer / Mentor
+│   ├── Host Learning Programs
+│   ├── Sponsor Toolkits
+│   ├── Contribute AI Challenges
+│   └── Open Doors for Communities
+│
+├── Resources
+│   ├── Guides & PDFs
+│   ├── Learning Tools
+│   ├── Events & Workshops
+│   └── Stories & Impact
+│
+├── Contact
+│   ├── Contact Form
+│   ├── Email
+│   └── Social Links
+│
+└── Legal
+    ├── Privacy Policy
+    └── Terms & Conditions

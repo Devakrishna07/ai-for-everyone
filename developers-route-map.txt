@@ -1,0 +1,18 @@
+/
+├── /why-ai-literacy
+├── /approach
+├── /programs
+│   ├── /programs/kuttymakers
+│   ├── /programs/youngmakers
+│   └── /programs/friends
+├── /partners
+├── /get-involved
+├── /resources
+│   ├── /resources/guides
+│   ├── /resources/tools
+│   ├── /resources/events
+│   └── /resources/stories
+├── /contact
+└── /legal
+    ├── /legal/privacy
+    └── /legal/terms
