@@ -5,9 +5,11 @@ import Home from './pages/Home'
 export default function App() {
   return (
     <BrowserRouter>
-       <Routes>
+       <div className='overflow-x-hidden'>
+        <Routes>
         <Route path='/' element={<Home />} />
        </Routes>
+       </div>
     </BrowserRouter>
   )
 }
