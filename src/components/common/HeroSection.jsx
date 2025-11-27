@@ -1,5 +1,6 @@
 import React from 'react'
 import { BackgroundGradientAnimation } from '../ui/background-gradient-animation';
+import GlassBtn from './GlassBtn';
 
 function HeroSection() {
   return (
@@ -9,7 +10,8 @@ function HeroSection() {
           <h1 className='text-5xl font-bold mb-5 sm:text-8xl'>AI-For-Everyone</h1>
           <h2 className='text-sm sm:text-xl'>Join a movement making AI education accessible to students, elders, professionals, and communities.<br/> Learn, explore, and engage responsibly.</h2>
           <div className='flex items-center justify-center my-4 flex-col sm:flex-row'>
-      
+            <GlassBtn text='read more' />
+             <GlassBtn text='read more' />
           </div>
         </p>
       </div>
