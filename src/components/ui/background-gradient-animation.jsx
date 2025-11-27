@@ -3,19 +3,21 @@ import { cn } from "@/components/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
 export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = "rgb(108, 0, 162)",
-  gradientBackgroundEnd = "rgb(0, 17, 82)",
-  firstColor = "18, 113, 255",
-  secondColor = "221, 74, 255",
-  thirdColor = "100, 220, 255",
-  fourthColor = "200, 50, 50",
-  fifthColor = "180, 180, 50",
-  pointerColor = "140, 100, 255",
-  size = "80%",
-  blendingValue = "hard-light",
-  children,
-  className,
-  interactive = true,
+ gradientBackgroundStart = "rgb(5, 5, 25)",      // very dark indigo/navy
+gradientBackgroundEnd   = "rgb(0, 0, 0)",       // black
+
+firstColor  = "18, 113, 255",   // electric blue
+secondColor = "221, 74, 255",   // magenta
+thirdColor  = "100, 220, 255",  // cyan
+fourthColor = "200, 50, 50",    // red accent
+fifthColor  = "180, 180, 50",   // yellow accent
+pointerColor   = "180, 160, 255",  // softer violet that pops on dark
+size           = "80%",
+blendingValue  = "hard-light",
+children,
+className,
+interactive    = true,
+
   containerClassName
 }) => {
   const interactiveRef = useRef(null);
