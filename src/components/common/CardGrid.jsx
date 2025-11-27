@@ -1,17 +1,30 @@
-export default function CardGrid({ data , exptext, href}) {
-  const topFour = data.slice(0, 4); // get first 4 items
+export default function CardGrid({ data, exptext, href, count = 4 }) {
+  const items = data.slice(0, count);
+
+  // Determine dynamic grid classes based on count
+  const gridCols =
+    count === 1
+      ? "grid-cols-1"
+      : count === 2
+      ? "grid-cols-1 sm:grid-cols-2"
+      : count === 3
+      ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"; // default for 4+
 
   return (
     <div className="w-full flex flex-col items-center">
+
       {/* Cards Container */}
-      <div className="
-        grid 
-        grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
-        gap-6 
-        px-4
-        w-screen
-      ">
-        {topFour.map((item, index) => (
+      <div
+        className={`
+          grid 
+          ${gridCols}
+          gap-4 
+          px-1
+          w-full 
+        `}
+      >
+        {items.map((item, index) => (
           <div
             key={index}
             className="
@@ -22,7 +35,6 @@ export default function CardGrid({ data , exptext, href}) {
               border border-white/20
               shadow-md shadow-black/30
               transition-all duration-500
-
               hover:shadow-purple-500/40 
               hover:shadow-2xl
               hover:bg-purple-500/20
@@ -38,20 +50,22 @@ export default function CardGrid({ data , exptext, href}) {
       </div>
 
       {/* See More Link */}
-      <div className="mt-6">
-        <a
-          href={href}
-          className="
-            text-purple-400 
-            hover:text-purple-300 
-            transition-all 
-            underline 
-            text-lg
-          "
-        >
-          {exptext}
-        </a>
-      </div>
+      {exptext && href && (
+        <div className="mt-6">
+          <a
+            href={href}
+            className="
+              text-purple-400 
+              hover:text-purple-300 
+              transition-all 
+              underline 
+              text-lg
+            "
+          >
+            {exptext}
+          </a>
+        </div>
+      )}
     </div>
   );
 }
