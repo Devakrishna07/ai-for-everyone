@@ -1,4 +1,4 @@
-export default function CardGrid({ data }) {
+export default function CardGrid({ data , exptext, href}) {
   const topFour = data.slice(0, 4); // get first 4 items
 
   return (
@@ -40,7 +40,7 @@ export default function CardGrid({ data }) {
       {/* See More Link */}
       <div className="mt-6">
         <a
-          href="#"
+          href={href}
           className="
             text-purple-400 
             hover:text-purple-300 
@@ -49,7 +49,7 @@ export default function CardGrid({ data }) {
             text-lg
           "
         >
-          See More →
+          {exptext}
         </a>
       </div>
     </div>
