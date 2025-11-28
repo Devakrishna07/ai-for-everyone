@@ -52,7 +52,11 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+		fontFamily: {
+        UbuntuBold: ["UbuntuBold", "sans-serif"],
+		Ubuntulight:["Ubuntulight", "sans-serif"],
+      },
   	},
 	animation: {
         first: "moveVertical 30s ease infinite",

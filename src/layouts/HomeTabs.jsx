@@ -35,7 +35,7 @@ const cardsData = [
 
 function HomeTabs() {
   return (
-    <div className='flex flex-col w-full bg-gradient-to-br from-blue-900/40 to-black p-4 text-center'>
+    <div className='flex flex-col w-full bg-gradient-to-br from-blue-900/40 to-black p-4 text-center font-UbuntuBold '>
       <CardGrid data={statsData} />
       <div className='w-full flex flex-col items-center justify-center py-4 m-2'>
         <h1 className='text-white text-8xl sm:text-6xl md:text-8xl font-bold text-white/70 border-white '>Why AI Literacy Matters </h1>

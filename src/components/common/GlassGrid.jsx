@@ -35,7 +35,7 @@ export default function GlassGrid({ cards, count = 4 }) {
               </h2>
 
               {/* Body */}
-              <p className="text-white/70 text-sm text-center mb-4 max-w-xs">
+              <p className="text-white/70 text-sm text-center mb-4 max-w-xs font-Ubuntulight ">
                 {card.description}
               </p>
 

@@ -66,3 +66,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'UbuntuBold';
+  src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Ubuntulight';
+  src: url('/fonts/Ubuntu-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
