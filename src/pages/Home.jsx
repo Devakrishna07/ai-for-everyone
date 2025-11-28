@@ -3,6 +3,7 @@ import HeroSection from '../components/common/HeroSection'
 import StatsCard from '../components/common/StatsCard'
 import HomeTabs from '../layouts/HomeTabs'
 import LearningPathway from '../layouts/LearningPathway'
+import CommunityStories from '../layouts/CommunityStories'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <HeroSection />
       <HomeTabs />
       <LearningPathway />
+      <CommunityStories />
     </div>
   )
 }
