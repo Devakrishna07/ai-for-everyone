@@ -9,10 +9,10 @@ export default function SubmitStoryForm() {
   const [showPopup, setShowPopup] = useState(false);
   const [popupState, setPopupState] = useState("loading");
 
-  // 🔑 UPDATED: Default values added for all fields
+  // Initial state with default, non-empty values for all fields
   const [formData, setFormData] = useState({
     name: "Jane Doe", 
-    ageGroup: "Adults", // Default to a valid option
+    ageGroup: "Adults", 
     title: "My AI-Generated Title", 
     role: "AI Enthusiast", 
     story: "This is my placeholder story about artificial intelligence...", 
@@ -30,8 +30,9 @@ export default function SubmitStoryForm() {
     setShowPopup(true);
     setPopupState("loading");
 
+    // ✅ CORRECTED: New Google Form URL
     const googleFormURL =
-      "https://docs.google.com/forms/d/e/1FAIpQLSeSk0lggrZQxwGmF6Gs1p18KicVbPs3nykt9bYjUw8ZXgYH_Q/formResponse";
+      "https://docs.google.com/forms/d/e/1FAIpQLSfiNELQ35ly1PoM0h0_DqRCW73gXF6nOJd48n7Umpgpspz2Yg/formResponse";
 
     const formBody = new FormData();
 
@@ -41,15 +42,15 @@ export default function SubmitStoryForm() {
     formBody.append("pageHistory", "0");
     formBody.append("fbzx", Date.now().toString()); 
 
-    // Your fields (These IDs must be confirmed as 100% correct)
-    formBody.append("entry.2005620554", formData.name);
-    formBody.append("entry.1045781291", formData.ageGroup);
-    formBody.append("entry.1065046570", formData.title);
-    formBody.append("entry.839337160", formData.role);
-    formBody.append("entry.1166974658", formData.story);
-    formBody.append("entry.839073006", formData.toolsUsed);
-    formBody.append("entry.1985046271", formData.location);
-    formBody.append("entry.1282912892", formData.allowPublish);
+    // 🚀 NEW, CORRECTED ENTRY IDs extracted from your HTML source
+    formBody.append("entry.1189447477", formData.name);       // Name
+    formBody.append("entry.169123896", formData.ageGroup);     // Age Group
+    formBody.append("entry.289295304", formData.title);       // Story Title
+    formBody.append("entry.731777085", formData.role);        // Role
+    formBody.append("entry.2063385764", formData.story);       // Write your story here
+    formBody.append("entry.1843513256", formData.toolsUsed);  // AI Tools Used
+    formBody.append("entry.1353995646", formData.location);   // Your Location
+    formBody.append("entry.1979438069", formData.allowPublish); // Allow Publish
 
     try {
       await fetch(googleFormURL, {
@@ -63,7 +64,7 @@ export default function SubmitStoryForm() {
       setTimeout(() => navigate("/stories"), 1500); 
 
     } catch (error) {
-      console.error("Network/CORS Submission Error (data may still have been sent):", error);
+      console.error("Submission Error:", error);
       setPopupState("error");
       setTimeout(() => setShowPopup(false), 3000); 
     }
@@ -131,7 +132,7 @@ export default function SubmitStoryForm() {
                 required
                 value={formData.ageGroup}
               >
-                <option value="" disabled>Select Age Group</option> 
+                <option value="Adults">Select Age Group</option> 
                 <option value="Children">Children</option>
                 <option value="Teens">Teens</option>
                 <option value="Young Adults">Young Adults</option>

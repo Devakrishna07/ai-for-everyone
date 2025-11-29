@@ -25,7 +25,6 @@ const Home = () => {
       <LearningPathway />
       <CommunityStories />
       <AskQuestion bulletPoints={askQuestionPoints} />
-      <AIFEFooter />
     </div>
   )
 }

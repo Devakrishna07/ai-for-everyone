@@ -101,7 +101,7 @@ function AskQuestion({ bulletPoints }) {
 
         {/* ASK QUESTION BUTTON */}
         <button
-          onClick={() => navigate("/ask-question")}
+          onClick={() => navigate("/ask")}
           className="
           mt-8 px-7 py-3 rounded-full
           bg-gradient-to-r from-blue-600 to-blue-800

@@ -10,7 +10,7 @@ import {
 
 export default function AIFEFooter() {
   return (
-    <footer className="w-full bg-gradient-to-br from-blue-800/40 to-black text-white/80 pt-14 pb-8">
+    <footer className="w-full bg-gradient-to-br from-blue-900 to-black text-white/80 pt-14 pb-8">
       
       {/* MAIN GRID */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
