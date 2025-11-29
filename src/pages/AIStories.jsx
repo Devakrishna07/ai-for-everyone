@@ -6,12 +6,17 @@ import FilterSearchBar from "../components/common/FilterSearchBar";
 import StoryGrid from "../components/common/StoryGrid";
 import StoryModal from "../components/common/StoryModal";
 
+// 👇 ADD THIS
+import { useNavigate } from "react-router-dom";
+
 export default function AIStoriesPage() {
+  // 👇 ADD THIS
+  const navigate = useNavigate();
+
   const [selectedAgeGroup, setSelectedAgeGroup] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeStory, setActiveStory] = useState(null);
 
-  // Attach readable age label
   const storiesWithLabels = useMemo(() => {
     const labelMap = AGE_GROUPS.reduce((acc, group) => {
       acc[group.id] = group.label;
@@ -23,7 +28,6 @@ export default function AIStoriesPage() {
     }));
   }, []);
 
-  // Filtering logic
   const filteredStories = useMemo(() => {
     const q = searchQuery.toLowerCase().trim();
 
@@ -71,7 +75,6 @@ export default function AIStoriesPage() {
           p-6 sm:p-10
           "
         >
-          {/* Purple Glow */}
           <div className="pointer-events-none absolute -top-10 -right-10 h-32 w-32 rounded-full bg-purple-600/40 blur-3xl"></div>
 
           <PageHeader
@@ -100,14 +103,16 @@ export default function AIStoriesPage() {
               Have a personal AI story to share with the world?
             </p>
 
+            {/* 👇 UPDATED BUTTON WITH NAVIGATION */}
             <button
+              onClick={() => navigate("/form")}
               className="
-              rounded-full border border-purple-400/80 
-              bg-purple-500/30 
-              px-6 py-2 text-sm 
-              hover:bg-purple-500/50 
-              hover:shadow-[0_0_25px_rgba(168,85,247,0.9)]
-              transition-all backdrop-blur-xl
+                rounded-full border border-purple-400/80 
+                bg-purple-500/30 
+                px-6 py-2 text-sm 
+                hover:bg-purple-500/50 
+                hover:shadow-[0_0_25px_rgba(168,85,247,0.9)]
+                transition-all backdrop-blur-xl
               "
             >
               Share Your Story ✨
@@ -116,7 +121,6 @@ export default function AIStoriesPage() {
         </div>
       </div>
 
-      {/* Modal overlay (outside card container) */}
       <StoryModal
         isOpen={!!activeStory}
         story={activeStory}
