@@ -14,8 +14,8 @@ function HeroSection() {
             Join a movement making AI education accessible to students, elders, professionals, and communities.<br/> Learn, explore, and engage responsibly.
           </p>
           <div className="flex items-center justify-center my-4 flex-col sm:flex-row gap-4 pointer-events-auto">
-            <GlassBtn text="read more" />
-            <GlassBtn text="stories" />
+            <GlassBtn text="Ask" navigateTo="/ask" />
+            <GlassBtn text="stories" navigateTo="./stories" />
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function Navbar() {
 
   const navItems = [
     { label: "Home", to: "/" },
-    { label: "Why AI Literacy", to: "/why-ai-literacy" },
+    { label: "Why AI Literacy", to: "/stories" },
     { label: "Programs", to: "/programs" },
     { label: "Resources", to: "/resources" },
     { label: "Ask", to: "/ask" },

@@ -21,7 +21,9 @@ const Home = () => {
   return (
     <div className='flex w-screen min-h-screen items-center justify-center flex-col overflow-x-hidden bg-black'>
       <HeroSection />
-      <HomeTabs />
+      <section id='HomeTabs'>
+        <HomeTabs />
+      </section>
       <LearningPathway />
       <CommunityStories />
       <AskQuestion bulletPoints={askQuestionPoints} />
