@@ -11,12 +11,12 @@ export default function AIQuestions() {
   const nextTen = aiQuestions.slice(5, 15);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-blue-900 to-black text-white px-6 py-10">
+    <div className="min-h-screen w-full bg-gradient-to-br from-blue-900 to-black text-white px-6 py-10 pt-10">
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
 
         {/* LEFT SIDE — QUESTIONS */}
-        <div className="w-full lg:w-2/3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-xl">
+        <div className="w-full lg:w-2/3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 pt-8 shadow-xl">
 
           <h1 className="text-3xl font-bold text-center mb-6">
             Common AI Doubts
