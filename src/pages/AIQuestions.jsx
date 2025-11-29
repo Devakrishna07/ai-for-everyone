@@ -1,7 +1,7 @@
 // src/pages/AIQuestions.jsx
 import { useState } from "react";
 import aiQuestions from "../data/questions";
-import AIChatBox from "../components/ui/AIChatBox";
+import AIChatbox from "../components/ui/AIChatbox";
 
 export default function AIQuestions() {
   const [expanded, setExpanded] = useState(false);
@@ -91,7 +91,7 @@ export default function AIQuestions() {
 
         {/* RIGHT SIDE — CHAT BOX */}
         <div className="w-full lg:w-1/3">
-          <AIChatBox />
+          <AIChatbox />
         </div>
       </div>
     </div>

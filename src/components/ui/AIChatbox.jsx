@@ -1,7 +1,7 @@
 // src/components/AIChatBox.jsx
 import { useState } from "react";
 
-export default function AIChatBox() {
+export default function AIChatbox() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
